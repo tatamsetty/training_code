@@ -1,0 +1,78 @@
+-- DB / RDBMS
+
+Tables = Entities
+    Columns = Attributes 
+        Datatype
+        Constraints
+            Primary Key = all values in the column are unique, and NOT NULL
+            Foreign Key = A Column in a table refering values to another tables PK
+            Check Constraints = (make sure its a list of values, less than-greater than some value)
+    Rows = Records = Tuples
+
+
+SQL Code (Notes)
+https://github.com/tinitiate/data-analyst/blob/master/002-mysql.sql
+
+CRUD Ops  = Create Read   Update Delete
+SQL Ops   = insert select Update Delete
+
+SQL:
+    DDL Data Defn language
+        create
+        alter
+        drop
+        
+    DML Data manipulation language
+        insert
+        update
+        delete
+        merge = update else insert
+    
+    DSL - Data selection language
+        select    -> columns / psuedo columns
+        from      -> table / select statement
+        where     -> joins / filter -> Always join "alike" columns
+        group by
+        having
+        order by
+        
+    TCL - Transaction (DML) control language
+        commit
+        rollback
+        
+    ACL - Access Control language
+        Grant
+        revoke
+
+
+DEPT
+DeptID(PK) Dname
+1          Sales
+2          IT
+3          Marketing
+4          Management
+5          utilities
+
+
+EMP
+EmpID   Ename  Sal   DeptID(FK)
+1       A      1000  1
+2       B      2000  2     
+3       C      6000  4
+4       E      4000  4
+5       F      3000  2 
+6       G      1000  NULL
+
+
+
+JOINS
+
+
+
+
+
+
+
+
+
+

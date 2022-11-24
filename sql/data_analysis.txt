@@ -1,0 +1,67 @@
+
+Data Generation
+
+# Transactional data
+    # Actions (Web based actions)
+    # Form Entry
+    # APP / Website
+    # Events
+        # Trigger
+        # Time based
+        # Automated Process Based
+
+# Look Up data / Master Data
+    # Plans
+    # Offerings
+    
+    
+
+# DB
+# Flat Files
+    # XMLs
+    # CSVs = Comma Seperated values
+    # JSONs
+    
+Normalized Data Model  = ERD = Entity relation Diagram    
+OLTP = Online Transactional Processing Systems
+DB
+* OLTP has Current data
+
+# Copy from DB
+# Export to Flat Files
+    # CSVs
+
+Normalized Data Model  = ERD = Entity relation Diagram    
+ODS = Operational data store
+DB
+* OLTP has Current data + Historical 
+* Intermediate DB
+
+# Copy from DB
+# Export to Flat Files
+    # CSVs
+
+De-Normalized Data Model  = ERD = Entity relation Diagram    
+OLAP = Online Analytical Processing Systems = DataWarehouse (Star Schema /Snowflake Schema)
+DB
+* OLAP has **De-Normalized** Current data + Historical data
+
+Ideal for
+Build Analytics / Business Intell'nce tools on this DB
+SQLs = Select statements
+
+ETL = Extract (From OLTP) || Transform (Convert Normalized data to De-Normalized) || Load(Load into OLAP)
+* Batch Process (Time interval)
+    - Load every hour
+    - Every day
+* Realtime
+
+
+
+
+
+
+
+
+
+
