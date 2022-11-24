@@ -1,0 +1,65 @@
+
+* Web framework Java/Python/C#/Perl/PHP
+1. (web)Server = programs
+2. Client = programs
+
+
+Server (python) =  IP Address / URL = Link =web address
+    vars
+    functions
+            response (static , dynamic, static and dynamic)
+            |
+            V  
+common data formats
+
+HTTP
+
+request = (click (event) / data)
+^
+|
+client (java / flutter / objective-c / swift )
+remote calls from a client
+
+
+Project
+    > App
+    Functionality 
+    
+=====================================================================================
+== URL ROUTING    
+=====================================================================================
+www.----.com:80
+localhost:8000/billing = app
+localhost:8000/billing/food       = views.functions
+                      /garments     views.functions  
+                      /homegoods    views.functions
+Project urls.py
+            * base + app location
+            
+App     urls.py
+bill
+            * app-functions
+            
+# route to a function that has home page
+##
+localhost:8000 -> point to homepage>views.py > def homepage
+project-urls.py
+    # path('', include('homepage.urls')),
+app-urls.py
+    path('', views.homepage),
+
+
+# route to this page /function
+##
+localhost:8000/movies/action -> point to app_movies>views.py > def function_action
+project-urls.py
+    path('movies', include('app_movies.urls')),
+app-urls.py
+    path('action', views.function_action),
+    path('action/', views.function_action),
+    path('action/marvel', views.marvel),
+    
+=====================================================================================
+
+
+
